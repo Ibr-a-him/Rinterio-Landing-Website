@@ -37,18 +37,18 @@
 <body class="font-sans">
 
   <!-- Header -->
-  <header>
-    <nav class="container flex justify-between text-center w-11/12 mx-auto my-4">
+  <header class=" max-w-full max-h-full ">
+    <nav class="container flex justify-between text-center w-11/12 mx-auto my-4 ">
       <div class="flex text-center my-auto">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="size-8 bg-lime-600 p-2 mt-[6px] rounded-full">
+          class="size-8 bg-lime-400 p-2 mt-[6px] rounded-full">
           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
         </svg>
 
         <h2 class="text-gray-600 text-2xl font-semibold pl-2">Rinterio</h2>
       </div>
 
-      <ul class="menu menu-horizontal px-1 flex items-center gap-5 text-lg font-medium">
+      <ul class="xl:menu-horizontal px-1 flex items-center gap-10 text-lg font-medium  lg:flex hidden">
         <li class="hover:text-primary transition-colors ease-in-out duration-300">
           <a href="#">Home</a>
         </li>
@@ -66,9 +66,12 @@
         </li>
       </ul>
 
-      <div class="flex gap-4">
+      <div class="hidden md:flex gap-4">
+
+
         <i class="bx bx-search-alt-2 bg-white p-3 shadow-md rounded-full text-2xl m-auto"></i>
-        <i class='bx bx-cart  bg-white p-3  text-center shadow-md rounded-full text-2xl m-auto '></i>
+        <i class="bx bx-cart bg-white p-3 text-center shadow-md rounded-full text-2xl m-auto"></i>
+
 
         <h3
           class="flex text-gray-600 bg-lime-500 font-medium text-center rounded-3xl my-auto h-12 p-2 hover:bg-cyan-600 cursor-pointer transition-colors ease-in-out duration-300 ">
@@ -78,9 +81,35 @@
           </svg>
         </h3>
       </div>
+      <i class="bx bx-menu md:hidden"></i>
     </nav>
+
+    <!-- End Navbar -->
+
+    <!-- header-banner -->
+
+    <div class="mx-auto w-full text-center mt-6 px-4 sm:px-6 lg:px-8">
+      <img src="assets/banner.png" alt="house banner" class="mx-auto max-w-full h-auto">
+
+      <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mt-4 max-w-[800px] mx-auto text-center">
+        A barn house of this design has a striking appearance
+      </h1>
+      <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl max-w-[800px] mx-auto text-center">
+        This design features a unique architectural style that makes the barn house stand out with its bold aesthetics
+        and
+        innovative structure.
+      </p>
+
+      <button class="btn bg-lime-300 flex text-center mx-auto mt-4 text-xl">
+        View Detalls
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-8 bg-lime-400 p-2 mt-[6px] rounded-full">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </button>
+    </div>
+
   </header>
-  <!-- End Navbar -->
   <!-- header End -->
 </body>
 
