@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
+  <!-- Google Font Link -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <!-- tailwind css & DaisyUI Links -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Boxicons CDN link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+<body class="font-sans">
+
+  <!-- Header -->
+  <header>
+    <nav class="container flex justify-between text-center w-11/12 mx-auto my-4">
+      <div class="flex text-center my-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-8 bg-lime-600 p-2 mt-[6px] rounded-full">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+
+        <h2 class="text-gray-600 text-2xl font-semibold pl-2">Rinterio</h2>
+      </div>
+
+      <ul class="menu menu-horizontal px-1 flex items-center gap-5 text-lg font-medium">
+        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+          <a href="#">Home</a>
+        </li>
+        <li class="hover:text-cyan-600 text-gray-400 transition-colors ease-in-out duration-300">
+          <a href="#">Service</a>
+        </li>
+        <li class="hover:text-cyan-600 text-gray-400 transition-colors ease-in-out duration-300">
+          <a href="#">Portfoilo</a>
+        </li>
+        <li class="hover:text-cyan-600 text-gray-400 transition-colors ease-in-out duration-300">
+          <a href="#">Blog</a>
+        </li>
+        <li class="hover:text-cyan-600 text-gray-400 transition-colors ease-in-out duration-300">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="flex gap-4">
+        <i class="bx bx-search-alt-2 bg-white p-3 shadow-md rounded-full text-2xl m-auto"></i>
+        <i class='bx bx-cart  bg-white p-3  text-center shadow-md rounded-full text-2xl m-auto '></i>
+
+        <h3
+          class="flex text-gray-600 bg-lime-500 font-medium text-center rounded-3xl my-auto h-12 p-2 hover:bg-cyan-600 cursor-pointer transition-colors ease-in-out duration-300 ">
+          Book Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-8  bg-white p-2 shadow-xl ml-2 text-center rounded-full  ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </h3>
+      </div>
+    </nav>
+  </header>
+  <!-- End Navbar -->
+  <!-- header End -->
+</body>
+
+</html>
